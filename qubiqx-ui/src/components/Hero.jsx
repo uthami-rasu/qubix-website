@@ -1,8 +1,27 @@
 import React from 'react';
+import { useLottie } from 'lottie-react';
 import section1_1 from '../assets/images/section1-1.png';
 import section1_2 from '../assets/images/section1-2.png';
+import scrollAnimation from '../animations/scroll down (1).json';
+import playgroundAnimation from '../animations/Image Playground Animation (1).json';
 
 const Hero = () => {
+  // Playground Animation Hook
+  const playgroundOptions = {
+    animationData: playgroundAnimation,
+    loop: true,
+    autoplay: true,
+  };
+  const { View: PlaygroundView } = useLottie(playgroundOptions);
+
+  // Scroll Animation Hook
+  const scrollOptions = {
+    animationData: scrollAnimation,
+    loop: true,
+    autoplay: true,
+  };
+  const { View: ScrollView } = useLottie(scrollOptions);
+
   return (
     <section className="relative min-h-screen bg-black flex flex-col items-center justify-center text-center px-4 pt-24 pb-20 overflow-hidden">
       {/* Background Abstract Layer */}
@@ -15,6 +34,11 @@ const Hero = () => {
             alt="Centered Ring" 
             className="w-full max-w-[690px] opacity-70 mix-blend-screen animate-pulse duration-[6000ms] pointer-events-none"
           />
+        </div>
+
+        {/* Playground Animation Backdrop */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] opacity-30 mix-blend-screen pointer-events-none">
+          {PlaygroundView}
         </div>
 
         {/* Wave Swirl (section1-1.png) - Positioned as a wave */}
@@ -66,10 +90,8 @@ const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 opacity-30">
-        <div className="w-[24px] h-[38px] border-2 border-white rounded-full flex justify-center p-1.5 pt-2">
-          <div className="w-1 h-2 bg-white rounded-full animate-bounce"></div>
-        </div>
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 w-14 h-14 opacity-40">
+        {ScrollView}
       </div>
     </section>
   );
