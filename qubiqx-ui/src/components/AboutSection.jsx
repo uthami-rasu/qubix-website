@@ -82,6 +82,23 @@ const AboutSection = () => {
         {/* Right Column: Empty but maintains layout balance */}
         <div className="hidden lg:block"></div>
       </div>
+
+      {/* Marquee at the bottom */}
+      <div className="absolute bottom-0 left-0 w-full bg-[#ef4444] py-1.5 overflow-hidden border-t border-white/10 z-20">
+        <div className="flex whitespace-nowrap animate-marquee-ltr">
+          {[...Array(20)].map((_, i) => (
+            <span key={i} className="text-white text-[15px] font-bold uppercase tracking-[4px] px-8 opacity-90">
+              Qubiqx
+            </span>
+          ))}
+          {/* Duplicate set for seamless scrolling */}
+          {[...Array(20)].map((_, i) => (
+            <span key={i + 20} className="text-white text-[15px] font-bold uppercase tracking-[4px] px-8 opacity-90">
+              Qubiqx
+            </span>
+          ))}
+        </div>
+      </div>
     </section>
   );
 };

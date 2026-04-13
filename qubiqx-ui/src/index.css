@@ -17,8 +17,31 @@ body {
   --font-sans: var(--font-poppins);
   --animate-float: float 6s ease-in-out infinite;
 
+  @keyframes marquee-ltr {
+    from { transform: translateX(-50%); }
+    to { transform: translateX(0); }
+  }
+
+    @keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
   @keyframes float {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-20px); }
   }
 }
+
+.animate-marquee-ltr {
+  animation: marquee-ltr 30s linear infinite;
+}
+
+.animate-float {
+  animation: var(--animate-float);
+}
+
+.animate-rotate {
+  animation: rotate 4s linear infinite;
+}
+
