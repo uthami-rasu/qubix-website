@@ -41,7 +41,7 @@ const TechSection = () => {
         
         {/* Header */}
         <div className="text-center mb-24 space-y-4">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-5xl font-bold text-white tracking-tight">
             Technologies <span className="text-[#ef4444]">We Use</span>
           </h2>
           <p className="text-gray-400 text-lg md:text-xl font-medium opacity-80">

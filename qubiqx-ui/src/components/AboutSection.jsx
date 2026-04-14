@@ -35,7 +35,7 @@ const AboutSection = () => {
           </div>
 
           {/* Heading */}
-          <h2 className="text-4xl md:text-5xl lg:text-[56px] font-bold text-white leading-[1.1] tracking-tight font-sans">
+          <h2 className="text-4xl md:text-5xl lg:text-5xl font-bold text-white leading-[1.1] tracking-tight font-sans">
             Crafting Meaningful <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ef4444] to-[#f43f5e]">
               Digital Experiences

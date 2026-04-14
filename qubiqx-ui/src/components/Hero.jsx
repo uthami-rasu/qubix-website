@@ -58,7 +58,7 @@ const Hero = () => {
         </div>
 
         {/* Heading */}
-        <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-[1.1] md:leading-[1.1] font-sans">
+        <h1 className="text-4xl sm:text-6xl lg:text-5xl font-bold text-white tracking-tight leading-[1.1] md:leading-[1.1] font-sans">
           Transforming Ideas Into <br className="hidden sm:block" />
           <span className="text-white">Digital Excellence</span>
         </h1>

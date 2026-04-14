@@ -6,6 +6,10 @@ import AboutSection from './components/AboutSection';
 import WhyChooseUs from './components/WhyChooseUs';
 import ServicesSection from './components/ServicesSection';
 import TechSection from './components/TechSection';
+import IndustriesSection from './components/IndustriesSection';
+import WorkSection from './components/WorkSection';
+import ProjectsSection from './components/ProjectsSection';
+import VisionSection from './components/VisionSection';
 import ScrollProgress from './components/ScrollProgress';
 
 function App() {
@@ -40,6 +44,10 @@ function App() {
         <WhyChooseUs />
         <ServicesSection />
         <TechSection />
+        <IndustriesSection />
+        <WorkSection />
+        <ProjectsSection />
+        <VisionSection />
       </main>
     </div>
   );

@@ -42,7 +42,7 @@ const ServicesSection = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Header */}
         <div className="text-center mb-24">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-5xl font-bold text-white tracking-tight">
             Our <span className="text-[#ef4444]">Services</span>
           </h2>
         </div>
