@@ -10,6 +10,8 @@ import IndustriesSection from './components/IndustriesSection';
 import WorkSection from './components/WorkSection';
 import ProjectsSection from './components/ProjectsSection';
 import VisionSection from './components/VisionSection';
+import ContactSection from './components/ContactSection';
+import TeamFooter from './components/TeamFooter';
 import ScrollProgress from './components/ScrollProgress';
 
 function App() {
@@ -48,6 +50,8 @@ function App() {
         <WorkSection />
         <ProjectsSection />
         <VisionSection />
+        <ContactSection />
+        <TeamFooter />
       </main>
     </div>
   );
