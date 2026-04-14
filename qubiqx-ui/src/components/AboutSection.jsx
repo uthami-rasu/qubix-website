@@ -11,17 +11,23 @@ const AboutSection = () => {
 
   return (
     <section 
-      className="relative py-28 px-6 lg:px-24 overflow-hidden font-sans bg-black border-y border-white/5"
-      style={{
-        backgroundImage: `url(${section2_1})`,
-        backgroundSize: 'cover',
-        backgroundPosition: '70% center',
-        backgroundRepeat: 'no-repeat'
-      }}
+      id="about"
+      className="relative py-20 md:py-28 px-6 lg:px-24 overflow-hidden font-sans bg-black border-y border-white/5"
     >
+      {/* Background Image Layer with Mobile-Specific Resizing */}
+      <div 
+        className="absolute inset-0 z-0 opacity-100 md:bg-cover bg-[length:auto_100%] bg-no-repeat bg-center md:bg-[70%_center]"
+        style={{
+          backgroundImage: `url(${section2_1})`
+        }}
+      ></div>
+
+      {/* Contrast Overlay - Deepened for mobile readability */}
+      <div className="absolute inset-0 bg-black/65 md:bg-black/20 z-[1]"></div>
+
       {/* Corner Glow Effects */}
-      <div className="absolute -top-20 -right-20 w-[600px] h-[600px] bg-pink-600/10 blur-[140px] rounded-full pointer-events-none z-0"></div>
-      <div className="absolute -bottom-40 -left-20 w-[600px] h-[600px] bg-pink-600/10 blur-[140px] rounded-full pointer-events-none z-0"></div>
+      <div className="absolute -top-20 -right-20 w-[600px] h-[600px] bg-pink-600/10 blur-[140px] rounded-full pointer-events-none z-[1]"></div>
+      <div className="absolute -bottom-40 -left-20 w-[600px] h-[600px] bg-pink-600/10 blur-[140px] rounded-full pointer-events-none z-[1]"></div>
       
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
         

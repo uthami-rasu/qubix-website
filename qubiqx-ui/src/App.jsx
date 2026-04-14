@@ -41,16 +41,16 @@ function App() {
       <ScrollProgress />
       <Header />
       <main>
-        <Hero />
+        <div id="home"><Hero /></div>
         <AboutSection />
         <WhyChooseUs />
-        <ServicesSection />
+        <div id="services"><ServicesSection /></div>
         <TechSection />
         <IndustriesSection />
         <WorkSection />
         <ProjectsSection />
-        <VisionSection />
-        <ContactSection />
+        <div id="careers"><VisionSection /></div>
+        <div id="contact"><ContactSection /></div>
         <TeamFooter />
       </main>
     </div>

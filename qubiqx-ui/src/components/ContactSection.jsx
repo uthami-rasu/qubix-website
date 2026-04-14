@@ -15,13 +15,16 @@ const ContactSection = () => {
     >
       <div className="max-w-full lg:max-w-[1200px] mx-auto relative z-10 w-full">
         
-        {/* Main Blue Glowing Frame (div.png) encapsulating the entire section */}
+        {/* Main Blue Glowing Frame (div.png) - Fixed corner line with padding-box clipping */}
         <div 
-          className="relative w-full p-6 md:p-10 lg:p-14 lg:py-16 rounded-[40px] md:rounded-[60px]"
+          className="relative w-full p-6 md:p-10 lg:p-14 lg:py-16 rounded-[40px] md:rounded-[60px] border-[1.5px] border-blue-500/60 shadow-[0_0_40px_rgba(59,130,246,0.2)] transition-all"
           style={{
             backgroundImage: `url(${form_frame})`,
             backgroundSize: '100% 100%',
-            backgroundRepeat: 'no-repeat'
+            backgroundRepeat: 'no-repeat',
+            zIndex: 10,
+            backgroundOrigin: 'border-box',
+            backgroundClip: 'padding-box'
           }}
         >
           <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-16 relative z-10">
