@@ -9,8 +9,8 @@ const TeamFooter = () => {
     <div className="w-full bg-black font-sans">
       
       {/* 2. Meet Our Team Section */}
-      <section className="bg-black pt-0 pb-0 px-6 lg:px-24 relative z-20">
-        <div className="max-w-[1100px] mx-auto relative overflow-visible -mb-10 lg:-mb-16 transition-all duration-500">
+      <section className="pt-0 pb-0 px-6 lg:px-24 relative z-20">
+        <div className="max-w-[1200px] mx-auto relative overflow-visible -mb-10 lg:-mb-16 transition-all duration-500">
           <div className="rounded-[40px] overflow-hidden shadow-2xl shadow-red-900/40 bg-red-600/30 backdrop-blur-xl border border-white/10 p-1">
             <img 
               src={team_img} 
@@ -22,11 +22,11 @@ const TeamFooter = () => {
       </section>
 
       {/* 3. Footer Area (Lets Talk!) */}
-      <footer className="bg-black pb-20 px-4 lg:px-12 relative z-10">
-        <div className="max-w-[1600px] mx-auto relative group">
+      <footer className="bg-black pb-20 px-4 lg:px-5 relative z-10">
+        <div className="max-w-[1700px] mx-auto relative group">
           
           {/* Main Footer Container with Glassmorphism */}
-          <div className="border-[3px] border-red-600/80 rounded-[60px] bg-black/40 backdrop-blur-2xl p-10 lg:p-14 lg:pt-28 relative overflow-hidden min-h-[450px] shadow-[0_0_80px_rgba(220,38,38,0.15)] z-10">
+          <div className="border-[3px] border-red-600/80 rounded-[20px] bg-red-900/30 backdrop-blur-2xl p-10 lg:p-14 lg:pt-28 relative overflow-hidden min-h-[450px] shadow-[0_0_80px_rgba(220,38,38,0.15)] z-10">
             {/* Subtle background glow enhancement */}
             <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-red-600/10 to-transparent pointer-events-none"></div>
             <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-gradient-to-tr from-red-600/5 to-transparent pointer-events-none"></div>
@@ -101,11 +101,11 @@ const TeamFooter = () => {
           </div>
 
           {/* Border Overlay Layer - sitting on top of everything to keep border visible over avatars */}
-          <div className="absolute inset-0 border-[3px] border-red-600/80 rounded-[60px] pointer-events-none z-30"></div>
+          <div className="absolute inset-0 border-[3px] border-red-600/80 rounded-[20px] pointer-events-none z-30"></div>
         </div>
 
         {/* 4. Bottom Copyright Bar */}
-        <div className="max-w-[1600px] mx-auto mt-10 flex flex-col md:flex-row items-center justify-between gap-8 text-gray-500 text-[10px] font-bold tracking-[0.4em] uppercase opacity-60">
+        <div className="max-w-[1700px] mx-auto mt-10 flex flex-col md:flex-row items-center justify-between gap-8 text-gray-500 text-[10px] font-bold tracking-[0.4em] uppercase opacity-60">
           <p className="tracking-widest">Copyright 2026, qubiqx.com</p>
           <div className="flex items-center gap-10 md:gap-16">
             <a href="#" className="hover:text-red-600 transition-colors duration-300">Home</a>

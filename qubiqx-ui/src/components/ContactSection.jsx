@@ -13,11 +13,11 @@ const ContactSection = () => {
         backgroundPosition: 'center'
       }}
     >
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-[1700px] mx-auto relative z-10 w-full">
         
         {/* Main Blue Glowing Frame (div.png) encapsulating the entire section */}
         <div 
-          className="relative w-full p-12 lg:p-20 lg:py-24"
+          className="relative w-full p-4 md:p-12 lg:p-20 lg:py-24"
           style={{
             backgroundImage: `url(${form_frame})`,
             backgroundSize: '100% 100%',
