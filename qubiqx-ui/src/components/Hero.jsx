@@ -58,7 +58,7 @@ const Hero = () => {
         </div>
 
         {/* Heading */}
-        <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-[80px] font-bold text-white tracking-tight leading-[1.1] md:leading-[1.05] font-sans max-w-4xl">
+        <h1 className="text-xl sm:text-3xl md:text-5xl  font-bold text-white tracking-tight leading-[1.1] md:leading-[1.05] font-sans max-w-4xl">
           Transforming Ideas Into <br className="hidden md:block" />
           <span className="text-white">Digital Excellence</span>
         </h1>
@@ -71,14 +71,14 @@ const Hero = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center gap-4 mt-8 w-full sm:w-auto">
-          <button className="w-full sm:w-auto bg-gradient-to-r from-red-600 to-red-400 text-white px-8 md:px-10 py-4 rounded-full font-bold flex items-center justify-center gap-2 shadow-[0_0_25px_rgba(220,38,38,0.3)] hover:shadow-[0_0_40px_rgba(220,38,38,0.5)] transition-all duration-300 active:scale-95 group text-sm md:text-base">
+          <button className="w-full sm:w-auto bg-gradient-to-r from-red-600 to-red-400 text-white px-8 md:px-6 py-4 rounded-full font-bold flex items-center justify-center gap-2 shadow-[0_0_25px_rgba(220,38,38,0.3)] hover:shadow-[0_0_40px_rgba(220,38,38,0.5)] transition-all duration-300 active:scale-95 group text-sm md:text-base">
             Start Your Project
             <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>
           </button>
           
-          <button className="w-full sm:w-auto bg-white/5 backdrop-blur-lg border border-white/10 text-white px-8 md:px-10 py-4 rounded-full font-bold flex items-center justify-center gap-3 hover:bg-white/10 hover:border-white/20 transition-all duration-300 active:scale-95 group text-sm md:text-base">
+          <button className="w-full sm:w-auto bg-white/5 backdrop-blur-lg border border-white/10 text-white px-8 md:px-6 py-4 rounded-full font-bold flex items-center justify-center gap-3 hover:bg-white/10 hover:border-white/20 transition-all duration-300 active:scale-95 group text-sm md:text-base">
             View Our Work
             <div className="w-6 h-6 bg-white/10 rounded-full flex items-center justify-center group-hover:scale-110 transition-all">
               <svg className="w-3.5 h-3.5 fill-white" viewBox="0 0 24 24">
