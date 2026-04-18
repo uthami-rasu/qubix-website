@@ -26,7 +26,7 @@ const WorkSection = () => {
       image: img_dev
     },
     {
-      id: 4,
+      id: 14,
       title: "Launch",
       description: "Deployment and continuous support",
       image: img_launch
